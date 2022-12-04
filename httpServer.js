@@ -14,7 +14,7 @@ let server = http.createServer((req, res) => {
         readFile('pets.json', 'utf-8').then((text) => {
             let pets = JSON.parse(text);
             
-        if(req.url === '/pets'){ //&& url
+        if(req.url === '/pets'){ //&& path
             
             //parse the text
             res.statusCode = 200
